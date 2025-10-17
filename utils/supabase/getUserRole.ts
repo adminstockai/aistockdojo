@@ -1,15 +1,17 @@
 import { jwtDecode } from 'jwt-decode'
-
+import { Bolt DatabaseClient } from '@supabase/Bolt Database-js'
 import { createClient as ServerClient } from './server'
-import { Tables } from './supabase'
+import { Tables, Database } from './Bolt Database'
 
-export async function getServerUserRole () {
-    const supabase = ServerClient()
-    const userData = await supabase.auth.getSession()
+export async function getServerUserRole (Bolt Database?: Bolt DatabaseClient<Database>) {
+    // 如果没有传入 Bolt Database 客户端，则创建一个新的（用于服务器组件）
+    const client = Bolt Database || ServerClient()
+    
+    const userData = await client.auth.getSession()
 
     if (userData.error) {
         console.log('Error getting user data', userData.error)
-        supabase.auth.signOut()
+        client.auth.signOut()
     }
 
     if (userData.data?.session?.access_token) {
