@@ -4,7 +4,7 @@ export default {
             badge: 'AI Stock Investment Education Platform',
             title: 'Learn Stock Investing with AI',
             subtitle: 'Next-Generation Investment Education',
-            description: 'Revolutionary stock investment education platform powered by LLM. Dramatically improve your investment skills with professional knowledge and AI technology.',
+            description: 'Revolutionary stock investment education platform powered by LLM. Learn investment knowledge and skills with educational content and AI technology support.',
             primaryCTA: 'Start Free',
             secondaryCTA: 'Browse Courses',
             watchDemo: 'Watch Demo',
@@ -20,7 +20,7 @@ export default {
             subtitle: 'Best learning experience with AI technology and expertise',
             aiTutor: {
                 title: 'AI Personal Tutor',
-                description: '24/7 dedicated AI tutor answers your stock investment questions instantly. Maximize learning efficiency with real-time feedback.'
+                description: '24/7 AI tutor supports your stock investment learning. Educational content and real-time feedback help you acquire knowledge.'
             },
             structuredCourses: {
                 title: 'Structured Curriculum',
@@ -31,8 +31,8 @@ export default {
                 description: 'Various exam formats including multiple choice, essays, and case studies. Instant AI evaluation with detailed feedback.'
             },
             realTimeAnalysis: {
-                title: 'Real-Time Market Analysis',
-                description: 'AI analyzes latest market data and provides insights for investment decisions. Bridge theory and practice.'
+                title: 'Market Data Learning',
+                description: 'Learn with educational content using latest market data. Study analytical methods to deepen understanding of stock markets.'
             },
             interactiveLearning: {
                 title: 'Interactive Learning',
@@ -98,6 +98,12 @@ export default {
             subtitle: 'Hear from our students'
         },
         cta: {
+            title: 'Start Your Investment Learning Today',
+            description: 'Systematically acquire stock investment knowledge with AI learning support',
+            button: 'Start Free',
+            note: 'No credit card required - Educational content only'
+        },
+        oldCta: {
             title: 'Start Your Investment Education Today',
             description: 'Take your investment skills to the next level with AI personal tutor',
             button: 'Start Free',

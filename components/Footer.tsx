@@ -208,6 +208,18 @@ export default async function Footer() {
                     </div>
                 </div>
 
+                {/* Disclaimer Notice */}
+                <div className="border-t border-gray-200 dark:border-gray-800 pt-6 pb-4">
+                    <div className="bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500 rounded-lg p-4">
+                        <p className="text-sm text-orange-800 dark:text-orange-200 font-semibold mb-2">
+                            ⚠️ 重要な注意事項
+                        </p>
+                        <p className="text-xs text-orange-700 dark:text-orange-300 leading-relaxed">
+                            本サービスは株式投資に関する教育目的のコンテンツを提供するものであり、金融商品取引法に基づく投資助言や投資勧誘を目的とするものではありません。投資判断は必ずお客様ご自身の責任において行ってください。当社は金融商品取引業者の登録を受けておりません。
+                        </p>
+                    </div>
+                </div>
+
                 {/* Bottom Bar */}
                 <div className="border-t border-gray-200 dark:border-gray-800 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
@@ -221,7 +233,7 @@ export default async function Footer() {
                         </div>
                         <div className="text-center md:text-right">
                             <p className="text-xs text-orange-600 dark:text-orange-400 font-medium">
-                                {t('bottom.disclaimer')}
+                                教育目的のプラットフォーム
                             </p>
                             <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">
                                 stockaidojo.jp

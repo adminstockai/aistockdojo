@@ -69,14 +69,14 @@ export default async function HeroSection() {
                         <div className="relative bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-8 space-y-6">
                             <div className="space-y-4">
                                 <div className="bg-blue-50 dark:bg-blue-900/20 rounded-2xl p-4">
-                                    <p className="text-sm text-gray-700 dark:text-gray-300">📊 今日の株価動向を教えてください</p>
+                                    <p className="text-sm text-gray-700 dark:text-gray-300">📚 株価チャートの読み方を教えてください</p>
                                 </div>
                                 <div className="bg-green-50 dark:bg-green-900/20 rounded-2xl p-4">
-                                    <p className="text-sm text-gray-700 dark:text-gray-300">🤖 本日の日経平均株価は...</p>
+                                    <p className="text-sm text-gray-700 dark:text-gray-300">🤖 チャート分析の基礎を学習しましょう...</p>
                                     <div className="mt-2 bg-white dark:bg-gray-700 rounded-lg p-3">
                                         <div className="flex items-center justify-between text-xs">
-                                            <span>日経225</span>
-                                            <span className="text-green-600 font-semibold">+2.3%</span>
+                                            <span>学習例：トレンド分析</span>
+                                            <span className="text-green-600 font-semibold">教育用サンプル</span>
                                         </div>
                                         <div className="mt-1 h-16 flex items-end gap-1">
                                             {[40, 55, 48, 65, 58, 70, 75].map((height, i) => (
@@ -91,13 +91,13 @@ export default async function HeroSection() {
                                     <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mb-2">
                                         <Brain className="w-6 h-6 text-white" />
                                     </div>
-                                    <p className="text-xs font-semibold">AI Tutor</p>
+                                    <p className="text-xs font-semibold">AI学習サポート</p>
                                 </div>
                                 <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 rounded-xl p-4">
                                     <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center mb-2">
                                         <BarChart3 className="w-6 h-6 text-white" />
                                     </div>
-                                    <p className="text-xs font-semibold">Market Analysis</p>
+                                    <p className="text-xs font-semibold">分析手法の学習</p>
                                 </div>
                             </div>
                         </div>
