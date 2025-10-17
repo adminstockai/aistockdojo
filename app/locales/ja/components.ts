@@ -2,34 +2,67 @@ export default {
     auth: {
         login: {
             title: 'ログイン',
+            subtitle: 'アカウントにログインしてください',
             email: 'メールアドレス',
             password: 'パスワード',
             forgotPassword: 'パスワードをお忘れですか？',
             submit: 'ログイン',
+            submitting: 'ログイン中...',
             noAccount: 'アカウントをお持ちでないですか？',
             signUp: '新規登録',
             or: 'または',
             googleSignIn: 'Googleでログイン',
-            githubSignIn: 'GitHubでログイン'
+            githubSignIn: 'GitHubでログイン',
+            error: {
+                invalidCredentials: 'メールアドレスまたはパスワードが正しくありません',
+                general: 'ログインに失敗しました。もう一度お試しください'
+            }
         },
-        signup: {
+        register: {
             title: '無料アカウント作成',
-            email: 'メールアドレス',
-            password: 'パスワード',
-            confirmPassword: 'パスワード（確認）',
+            subtitle: '今すぐ始めましょう',
+            createAccount: 'アカウントを作成',
+            form: {
+                fullName: 'お名前',
+                email: 'メールアドレス',
+                password: 'パスワード',
+                confirmPassword: 'パスワード（確認）',
+                emailPlaceholder: 'your@email.com',
+                passwordPlaceholder: '8文字以上',
+                fullNamePlaceholder: '山田 太郎'
+            },
             submit: '登録',
+            submitting: '登録中...',
             hasAccount: 'すでにアカウントをお持ちですか？',
             signIn: 'ログイン',
             terms: '利用規約とプライバシーポリシーに同意します',
             agreeToTerms: '登録することで、{terms}と{privacy}に同意したことになります',
             termsLink: '利用規約',
-            privacyLink: 'プライバシーポリシー'
+            privacyLink: 'プライバシーポリシー',
+            passwordRequirements: {
+                title: 'パスワードの要件',
+                minLength: '8文字以上',
+                hasNumber: '数字を含む',
+                hasLowercase: '小文字を含む',
+                hasUppercase: '大文字を含む',
+                hasSpecial: '特殊文字を含む'
+            },
+            error: {
+                emailExists: 'このメールアドレスは既に登録されています',
+                passwordMismatch: 'パスワードが一致しません',
+                general: '登録に失敗しました。もう一度お試しください'
+            },
+            success: {
+                title: '登録成功！',
+                description: '確認メールを送信しました。メールをご確認ください。'
+            }
         },
         forgotPassword: {
             title: 'パスワードリセット',
             description: 'メールアドレスを入力してください。パスワードリセット用のリンクをお送りします。',
             email: 'メールアドレス',
             submit: 'リセットリンクを送信',
+            submitting: '送信中...',
             backToLogin: 'ログインに戻る',
             success: 'パスワードリセット用のリンクを送信しました'
         },
