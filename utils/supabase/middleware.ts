@@ -34,7 +34,7 @@ export async function updateSession(request: NextRequest, response: NextResponse
         return NextResponse.redirect(new URL('/auth/login', request.url))
     }
 
-    const userRole = await getServerUserRole()
+    const userRole = await getServerUserRole(Bolt Database)  // ✅ 传入中间件的客户端
 
     if (userRole) {
         if (pathname.startsWith('/dashboard/teacher') &&
