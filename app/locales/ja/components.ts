@@ -13,7 +13,24 @@ export default {
             or: 'または',
             googleSignIn: 'Googleでログイン',
             githubSignIn: 'GitHubでログイン',
-            error: {
+            form: {
+                email: 'メールアドレス',
+                password: 'パスワード',
+                login: 'ログイン',
+                loggingIn: 'ログイン中'
+            },
+            validations: {
+                invalid_email: '有効なメールアドレスを入力してください',
+                password_required: 'パスワードは必須です',
+                password_min: 'パスワードは8文字以上である必要があります',
+                password_max: 'パスワードは100文字以下である必要があります',
+                password_lower: 'パスワードには小文字を含める必要があります',
+                password_upper: 'パスワードには大文字を含める必要があります',
+                password_number: 'パスワードには数字を含める必要があります',
+                password_symbol: 'パスワードには特殊文字を含める必要があります'
+            },
+            errors: {
+                passwordOrEmailIncorrect: 'メールアドレスまたはパスワードが正しくありません',
                 invalidCredentials: 'メールアドレスまたはパスワードが正しくありません',
                 general: 'ログインに失敗しました。もう一度お試しください'
             }
@@ -24,12 +41,16 @@ export default {
             createAccount: 'アカウントを作成',
             form: {
                 fullName: 'お名前',
+                name: 'お名前',
+                username: 'ユーザー名',
                 email: 'メールアドレス',
                 password: 'パスワード',
                 confirmPassword: 'パスワード（確認）',
                 emailPlaceholder: 'your@email.com',
                 passwordPlaceholder: '8文字以上',
-                fullNamePlaceholder: '山田 太郎'
+                fullNamePlaceholder: '山田 太郎',
+                signUp: '登録',
+                signingUp: '登録中'
             },
             submit: '登録',
             submitting: '登録中...',
@@ -39,6 +60,18 @@ export default {
             agreeToTerms: '登録することで、{terms}と{privacy}に同意したことになります',
             termsLink: '利用規約',
             privacyLink: 'プライバシーポリシー',
+            validations: {
+                invalid_email: '有効なメールアドレスを入力してください',
+                full_name_min: '名前は2文字以上である必要があります',
+                username_min: 'ユーザー名は2文字以上である必要があります',
+                password_required: 'パスワードは必須です',
+                password_min: 'パスワードは8文字以上である必要があります',
+                password_max: 'パスワードは100文字以下である必要があります',
+                password_lower: 'パスワードには小文字を含める必要があります',
+                password_upper: 'パスワードには大文字を含める必要があります',
+                password_number: 'パスワードには数字を含める必要があります',
+                password_symbol: 'パスワードには特殊文字を含める必要があります'
+            },
             passwordRequirements: {
                 title: 'パスワードの要件',
                 minLength: '8文字以上',
@@ -47,9 +80,10 @@ export default {
                 hasUppercase: '大文字を含む',
                 hasSpecial: '特殊文字を含む'
             },
-            error: {
+            errors: {
                 emailExists: 'このメールアドレスは既に登録されています',
                 passwordMismatch: 'パスワードが一致しません',
+                generic_error: '登録に失敗しました。もう一度お試しください',
                 general: '登録に失敗しました。もう一度お試しください'
             },
             success: {
